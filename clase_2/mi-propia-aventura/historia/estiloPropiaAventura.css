@@ -1,0 +1,19 @@
+body {
+    background-color: FFE3B3;
+}
+h2 {
+    background-color: FF6666;
+    text-align: center;
+}
+.alfajor {
+    height:100px;width:100px
+} 
+.titulo{
+    background-color: C9284F;
+    color: white
+}
+.decision {
+    text-align: center;
+    background-color: FFB072;
+    font-style:italic
+}
