@@ -1,0 +1,31 @@
+<html>
+   
+    <title>EJERCICIO DE DOM</title>
+    <body>
+        <link rel="stylesheet" href="estiloDom.css" type="text/css">
+        <h1>Practica de DOM</h1>
+        <div><p>Crea un documento HTML con un div adentro
+            Usando la propiedad style del elemento en javascript dale a ese div altura, ancho y un color de fondo
+            Ahora crea la clase .square en tu stylesheet, y dale las mismas propiedades
+            Ahora en vez de agregarsela con la propiedad style, hazlo con la propiedad classList.
+            Que devuelve h1.classList?
+            Desde tu consola quítale la clase .square al div
+            Haz una función que cada un segundo (setInterval()) se fije si tiene la clase square, si la tiene que se la quite, y si no la tiene la agregue.
+            Si lo hiciste con un if y un else no esta mal, pero prueba usando classList.toggle(). Mucho mas simple no?</p></div>
+    </body>
+    <script>
+        var $div = document.querySelector("div")
+        $div.classList.add(cambiarFormato())
+
+        function cambiarFormato(){
+            setInterval(() => {
+                $div.classList.toggle("square")
+            }, 1000);
+        }
+        //div.style.height = "50px"
+        //div.style.width = "70px"
+        //div.style.background="red"
+    
+    </script>
+   
+</html>
